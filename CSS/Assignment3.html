@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-1</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f2f2f;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 800px;
+        height: 450px;
+        padding: 20px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+      }
+      .main {
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 40%;
+        width: 100%;
+      }
+      .main div {
+        background-color: rgb(79, 5, 5);
+        height: 180px;
+        width: 265px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left;
+      }
+
+      .content {
+        display: flex;
+        height: 60%;
+        width: 100%;
+        background-color: red;
+        color: white;
+        font-weight: 300;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .para-head {
+        color: rgb(222, 222, 222);
+        font-weight: 300;
+        font-size: smaller;
+        text-align: center;
+      }
+      .para-content {
+        color: rgb(154, 73, 73);
+        font-weight: 100;
+        font-size: x-small;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div>
+          <h1>Down With State</h1>
+          <p>
+            Abandon the left vs right paradigm and adopt new ideas<br />
+            where consistancy and logic reigns supreme
+          </p>
+        </div>
+        <div>
+          <img
+            style="height: 100px; width: 100px"
+            src="./images/images.png"
+            alt="eagle_image"
+          />
+        </div>
+      </div>
+      <div class="main">
+        <div class="one">
+          <p class="para-head">But what about the roads?</p>
+          <p class="para-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sit
+            in, natus dolorem commodi quaerat ab ratione corporis veritatis a
+            praesentium distinctio .
+          </p>
+        </div>
+        <div class="two">
+          <p class="para-head">But what about the roads?</p>
+          <p class="para-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sit
+            in, natus dolorem commodi quaerat ab ratione corporis veritatis a
+            praesentium distinctio .ipsum dolor sit amet consectetur adipisicing
+            elit.
+          </p>
+        </div>
+        <div class="three">
+          <p class="para-head">But what about the roads?</p>
+          <p class="para-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sit
+            in, natus dolorem commodi quaerat ab ratione corporis veritatis a
+            praesentium distinctio .
+            <br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
