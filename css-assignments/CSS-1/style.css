@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.page {
+  padding-top: 2.5rem;
+}
+
+.container {
+  width: 56.25rem;
+  margin: 0 auto;
+}
+
+.layout__header {
+  height: 7.5rem;
+  background-color: #ff5aa5;
+  margin-bottom: 1.25rem;
+}
+
+.layout__content {
+  height: 18.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.main-content {
+  float: left;
+  width: 38.75rem;
+  height: 100%;
+  background-color: #ff007f;
+}
+
+.sidebar {
+  float: right;
+  width: 16.25rem;
+  height: 100%;
+  background-color: #c0006f;
+}
+
+.layout__footer {
+  height: 7.5rem;
+  background-color: #7a2a52;
+}
