@@ -44,6 +44,11 @@ body {
   margin-right: 1.5rem;
 }
 
+.hero-logo img {
+  height: 12rem;
+  width: 16rem;
+}
+
 main {
   min-height: 10rem;
 }
