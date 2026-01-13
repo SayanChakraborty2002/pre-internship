@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-ADV Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="/" class="logo-link">
+        <img src="../images/logo.png" alt="Logo" width="110" height="90" />
+      </a>
+
+      <nav class="main-nav">
+        <a href="/home" target="_self">Home</a>
+        <a href="/services" target="_self">Service</a>
+        <a href="/profiles" target="_self">Profile</a>
+        <a href="/contacts" target="_self">Contact us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <button class="banner-control prev" aria-label="Previous">‹</button>
+        <h1>BANNER</h1>
+        <button class="banner-control next" aria-label="Next">›</button>
+      </section>
+
+      <section class="content-area">
+        <div class="left-column">
+          <div class="yellow-box"></div>
+          <div class="purple-box"></div>
+        </div>
+
+        <div class="right-column">
+          <section class="orange-box">
+            <form action="/submit-page">
+              <input type="text" placeholder="Enter name" />
+              <input type="email" placeholder="Enter email" />
+              <select>
+                <option disabled selected>Select an option</option>
+                <option>Student</option>
+                <option>Developer</option>
+              </select>
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+
+          <div class="green-box"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav class="footer-nav">
+        <a href="/home">Home</a>
+        <a href="/services">Service</a>
+        <a href="/profiles">Profile</a>
+        <a href="/contacts">Contact us</a>
+      </nav>
+    </footer>
+  </body>
+</html>
