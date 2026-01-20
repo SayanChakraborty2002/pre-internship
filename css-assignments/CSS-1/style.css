@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 56.25rem;
+  max-width: 59%;
   margin: 0 auto;
 }
 

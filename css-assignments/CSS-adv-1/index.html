@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,58 +8,74 @@
   </head>
 
   <body>
-    <header class="site-header">
-      <a href="/" class="logo-link">
-        <img src="../images/logo.png" alt="Logo" width="110" height="90" />
-      </a>
+    <div class="container">
+      <header class="site-header">
+        <a href="/home" class="logo-link">
+          <img
+            src="../images/logo.png"
+            alt="Company Logo"
+            width="110"
+            height="90"
+            loading="lazy"
+          />
+        </a>
 
-      <nav class="main-nav">
-        <a href="/home" target="_self">Home</a>
-        <a href="/services" target="_self">Service</a>
-        <a href="/profiles" target="_self">Profile</a>
-        <a href="/contacts" target="_self">Contact us</a>
-      </nav>
-    </header>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/home" class="active">Home</a></li>
+            <li><a href="/services">Service</a></li>
+            <li><a href="/profiles">Profile</a></li>
+            <li><a href="/contacts">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <section class="banner">
-        <button class="banner-control prev" aria-label="Previous">‹</button>
-        <h1>BANNER</h1>
-        <button class="banner-control next" aria-label="Next">›</button>
-      </section>
+      <main>
+        <section class="banner">
+          <button class="banner-control left">‹</button>
 
-      <section class="content-area">
-        <div class="left-column">
-          <div class="yellow-box"></div>
-          <div class="purple-box"></div>
-        </div>
+          <span class="banner-text">BANNER</span>
 
-        <div class="right-column">
-          <section class="orange-box">
-            <form action="/submit-page">
-              <input type="text" placeholder="Enter name" />
-              <input type="email" placeholder="Enter email" />
-              <select>
-                <option disabled selected>Select an option</option>
-                <option>Student</option>
-                <option>Developer</option>
-              </select>
-              <button type="submit">Submit</button>
-            </form>
-          </section>
+          <button class="banner-control right">›</button>
+        </section>
 
-          <div class="green-box"></div>
-        </div>
-      </section>
-    </main>
+        <section class="content-area">
+          <div class="left-column">
+            <div class="yellow-box"></div>
+            <div class="purple-box"></div>
+          </div>
 
-    <footer class="site-footer">
-      <nav class="footer-nav">
-        <a href="/home">Home</a>
-        <a href="/services">Service</a>
-        <a href="/profiles">Profile</a>
-        <a href="/contacts">Contact us</a>
-      </nav>
-    </footer>
+          <div class="right-column">
+            <section class="orange-box">
+              <form action="/submit-page">
+                <input type="text" required />
+                <input type="email" required />
+
+                <select required>
+                  <option value="" disabled selected></option>
+                  <option value="student">Student</option>
+                  <option value="developer">Developer</option>
+                </select>
+
+                <button type="submit">Submit</button>
+              </form>
+            </section>
+
+            <div class="green-box"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/services">Service</a></li>
+            <li><a href="/profiles">Profile</a></li>
+            <li><a href="/contacts">Contact us</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>
