@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  padding-top: 4rem;
+  padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -63,7 +63,7 @@ body {
 .info-card {
   height: 17rem;
   float: left;
-  width: 25rem;
+  width: 24rem;
   padding: 2rem;
   border-right: 0.2rem solid red;
 }
