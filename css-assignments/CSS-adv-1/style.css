@@ -16,7 +16,7 @@ body {
 .site-header {
   background: #ddd;
   padding: 1rem 2rem;
-  overflow: hidden;
+  height: 8rem;
 }
 
 .logo-link {
@@ -53,7 +53,7 @@ body {
 .banner {
   position: relative;
   background: #00b7ff;
-  height: 20rem;
+  height: 18rem;
   text-align: center;
   line-height: 20rem;
 }
