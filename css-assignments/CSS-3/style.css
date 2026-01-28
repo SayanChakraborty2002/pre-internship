@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #e60000;
+  padding: 5rem;
+  overflow: hidden;
+  min-height: 23rem;
+}
+
+.hero-text {
+  float: left;
+  width: 36rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 29rem;
+  font-weight: 300;
+}
+
+.hero-logo {
+  float: right;
+  margin-right: 3rem;
+}
+
+.hero-logo img {
+  width: 100%;
+  max-width: 18rem;
+  height: auto;
+}
+
+.card-wrapper {
+  background-color: #5c0d0d;
+  overflow: hidden;
+}
+
+.info-card {
+  height: 17rem;
+  float: left;
+  width: 24rem;
+  padding: 2rem;
+  border-right: 0.2rem solid red;
+}
+
+.info-card:last-child {
+  border-right: none;
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 1.5rem;
+  font-weight: 300;
+}
+
+.info-card p {
+  font-size: 0.8rem;
+  color: #8b3c3c;
+  line-height: 1.3;
+}

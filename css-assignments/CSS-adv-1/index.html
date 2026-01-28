@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-ADV Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <a href="/home" class="logo-link">
+          <img
+            src="../images/logo.png"
+            alt="Company Logo"
+            width="110"
+            height="90"
+            loading="lazy"
+          />
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/home" class="active">Home</a></li>
+            <li><a href="/services">Service</a></li>
+            <li><a href="/profiles">Profile</a></li>
+            <li><a href="/contacts">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="banner">
+          <button class="banner-control left">‹</button>
+
+          <span class="banner-text">BANNER</span>
+
+          <button class="banner-control right">›</button>
+        </section>
+
+        <section class="content-area">
+          <div class="left-column">
+            <div class="yellow-box">
+              <div class="purple-box"></div>
+            </div>
+          </div>
+
+          <div class="right-column">
+            <section class="orange-box">
+              <form action="/submit-page">
+                <input type="text" required />
+                <input type="email" required />
+
+                <select required>
+                  <option value="" disabled selected></option>
+                  <option value="student">Student</option>
+                  <option value="developer">Developer</option>
+                </select>
+
+                <button type="submit">Submit</button>
+              </form>
+            </section>
+
+            <div class="green-box"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/services">Service</a></li>
+            <li><a href="/profiles">Profile</a></li>
+            <li><a href="/contacts">Contact us</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
