@@ -178,8 +178,8 @@ h2 {
 
 .btn:hover {
   background-color: rgba(208, 169, 4, 1);
-  border: none;
   color: #fff;
+  border-color: rgba(208, 169, 4, 1);
 }
 
 /* HERO BUTTONS */
@@ -272,6 +272,7 @@ h2 {
   justify-content: center;
   text-align: center;
   color: #fff;
+  padding: 2rem;
 }
 .services {
   position: relative;
@@ -285,9 +286,10 @@ h2 {
 
 .service-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 2rem;
 }
 
 .service-list p {
@@ -436,18 +438,20 @@ h2 {
 }
 
 .achievement-list {
-  position: absolute;
+  position: relative;
+  padding: 3rem 0;
   z-index: 2;
   text-align: center;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
-  justify-content: center;
+  gap: 2rem;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .achievements:hover {
-  color: #be920c;
+  color: #d0a904;
   transition: all 0.3s ease;
 }
 
@@ -549,6 +553,7 @@ h2 {
 .testimonial-section {
   position: relative;
   min-height: 80vh;
+  padding: 5rem;
   background: url("./images/img-3.jpg") center/cover no-repeat;
   color: #fff;
 }
@@ -563,14 +568,23 @@ h2 {
 
 /* CONTENT */
 .testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   position: relative;
   z-index: 2;
   padding: 4.5rem 0;
 }
 
 /* HEADER */
+
+.testimonial-header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .testimonial-header {
-  max-width: 500px;
   margin-bottom: 3rem;
 }
 
@@ -586,9 +600,6 @@ h2 {
 
 /* NAVIGATION */
 .testimonial-nav {
-  position: absolute;
-  top: 4.5rem;
-  right: 2rem;
   display: flex;
 }
 
@@ -600,7 +611,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
 }
 
 .nav-btn.prev {
@@ -617,6 +628,7 @@ h2 {
 
 .testimonial-grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 4rem;
   justify-content: space-between;
   align-items: center;
@@ -728,7 +740,7 @@ h2 {
 }
 
 .footer {
-  background-color: #3c3a6e;
+  background-color: #3a376c;
   color: #ffffff;
 }
 
@@ -769,19 +781,18 @@ h2 {
 }
 
 .footer-col h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .footer-col ul {
   list-style: none;
-  padding: 0;
 }
 
 .footer-col ul li {
-  font-size: 13px;
-  letter-spacing: 1px;
-  opacity: 0.8;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  opacity: 0.6;
   margin-bottom: 10px;
 }
 
@@ -798,33 +809,33 @@ h2 {
 .newsletter-box {
   display: flex;
   background: #ffffff;
-  width: 260px;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .newsletter-box input {
   border: none;
   outline: none;
-  padding: 12px 15px;
-  border-radius: 20px;
+  padding: 10px 12px;
   flex: 1;
 }
 
+.newsletter-box img {
+  display: block;
+}
+
 .newsletter-box button {
-  background: #e0b100;
+  background: #d0a904;
   border: none;
-  padding: 0 18px;
+  padding: 0 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 .newsletter-box button img {
-  width: 20px;
+  width: 22px;
 }
 
 /* BOTTOM */
@@ -833,5 +844,6 @@ h2 {
   text-align: center;
   padding: 20px;
   font-size: 12px;
-  opacity: 0.7;
+  opacity: 0.3;
+  letter-spacing: 2px;
 }
