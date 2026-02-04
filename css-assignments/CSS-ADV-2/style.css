@@ -36,11 +36,12 @@ h2 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2.2rem;
+  padding: 2rem 2.2rem;
 }
 
 /* NAVBAR */
 .navbar-wrapper {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -67,12 +68,6 @@ h2 {
   flex-wrap: wrap;
   gap: 1.2rem;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  .nav-list {
-    display: none;
-  }
 }
 
 .nav-list a {
@@ -105,10 +100,15 @@ h2 {
   transition: all 0.5s ease-in;
 }
 
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+}
+
 /* HERO SECTION */
 .hero-section {
   position: relative;
-  padding: 4rem;
   min-height: 80vh;
   background: url("./images/img-1.jpg") center/cover no-repeat;
   display: flex;
@@ -311,9 +311,7 @@ h2 {
 }
 
 /* PRODUCT SECTION */
-.product-section {
-  padding: 4rem 0;
-}
+
 .product {
   position: relative;
 }
@@ -331,6 +329,8 @@ h2 {
 .product-menu-items {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   gap: 1rem;
   margin-bottom: 3rem;
 }
@@ -377,16 +377,29 @@ h2 {
   grid-row: 2/4;
   grid-column: 3/4;
 }
+@media (max-width: 768px) {
+  .products-img-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .product-1 {
+    grid-row: auto;
+  }
+
+  .product-7 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
 
 /* OVERLAY */
 .product-overlay {
   position: absolute;
-  inset: 0;
+  inset: 0.7rem;
   background-color: rgba(17, 21, 52, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0.7rem;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -440,15 +453,19 @@ h2 {
 
 .achievement-list {
   position: relative;
-  padding: 3rem 0;
   z-index: 2;
   text-align: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  justify-content: space-evenly;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .achievement-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .achievements:hover {
