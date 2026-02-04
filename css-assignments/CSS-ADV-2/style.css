@@ -762,6 +762,10 @@ h2 {
   color: #ffffff;
 }
 
+.footer-section {
+  padding: 0;
+}
+
 /* TOP SECTION */
 .footer-top {
   margin: auto;
