@@ -24,24 +24,66 @@
       <nav class="navbar-wrapper container" aria-label="Main navigation">
         <!-- Logo -->
         <div class="company-logo">
-          <a href="#home" aria-label="Go to homepage">
+          <a href="#home" aria-label="Go to homepage" rel="home">
             <img
               src="./images/head_logo.jpg"
               alt="Company logo"
               loading="eager"
+              title="go to homepage"
+              height="70"
             />
           </a>
         </div>
 
         <!-- Navigation -->
         <div class="navbar-menu">
-          <ul class="nav-list" role="menubar">
-            <li><a href="#home" role="menuitem">HOME</a></li>
-            <li><a href="#about" role="menuitem">ABOUT</a></li>
-            <li><a href="#services" role="menuitem">SERVICES</a></li>
-            <li><a href="#portfolio" role="menuitem">PORTFOLIO</a></li>
-            <li><a href="#pricing" role="menuitem">PRICE</a></li>
-            <li><a href="#blog" role="menuitem">BLOG</a></li>
+          <ul class="nav-list" aria-label="menu-list" role="menubar">
+            <li>
+              <a href="#home" aria-label="Go to home section" role="menuitem"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#about" aria-label="Go to about section" role="menuitem"
+                >ABOUT</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                aria-label="Go to services section"
+                role="menuitem"
+                >SERVICES</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                aria-label="Go to portfolio section"
+                role="menuitem"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                aria-label="Go to pricing section"
+                role="menuitem"
+                >PRICE</a
+              >
+            </li>
+            <li>
+              <a href="#blog" aria-label="Go to blog section" role="menuitem"
+                >BLOG
+                <img
+                  class="down-arrow"
+                  src="images/icons/arrow-down.svg"
+                  alt="down-arrow"
+                  aria-hidden="true"
+                  height="6"
+                  title="go to blog"
+              /></a>
+            </li>
           </ul>
 
           <!-- Mail Icon -->
@@ -54,6 +96,8 @@
               src="./images/mail.jpg"
               alt=""
               aria-hidden="true"
+              title="mail-logo"
+              height="50"
               loading="eager"
             />
           </a>
@@ -66,49 +110,53 @@
       <section
         class="hero-section dark-background"
         id="home"
-        aria-labelledby="hero-heading"
+        aria-label="Welcome to Hero section"
       >
-        <div class="hero-description container">
-          <h1 id="hero-heading" class="hero-heading">
-            <span class="roboto-thin">We Will</span>
-            <span class="roboto-bold">Make</span>
-            <span class="roboto-thin"> Your</span>
-            <span class="roboto-bold">Business</span>
-            <span class="roboto-thin block">Great Again</span>
-          </h1>
+        <div class="hero-content container">
+          <div class="hero-description">
+            <h1 id="hero-heading" class="hero-heading">
+              We Will
+              <span class="roboto-bold">Make</span>
+              Your
+              <span class="roboto-bold">Business</span>
+              Great Again
+            </h1>
 
-          <p class="roboto-thin">
-            Consectetur adipisicing elit. Impedit repudiandae nisi maiores
-            dolore dolor.
-          </p>
+            <p class="roboto-thin">
+              Qnsectetur adipisicing elit. Impedit repudiandae nisi maiores
+              dolore dolor.
+            </p>
 
-          <div class="hero-buttons">
-            <a
-              href="#contact"
-              class="btn white-outline"
-              aria-label="Contact our company"
-              >CONTACT US</a
-            >
-            <a
-              href="#services"
-              class="btn white-outline"
-              aria-label="Discover our services"
-              >DISCOVER NOW</a
-            >
+            <div class="hero-buttons">
+              <a
+                href="#contact"
+                class="btn white-outline"
+                aria-label="Contact our company"
+                >CONTACT US</a
+              >
+              <a
+                href="#services"
+                class="btn white-outline"
+                aria-label="Discover our services"
+                >DISCOVER NOW</a
+              >
+            </div>
           </div>
-
           <!-- Down Arrow -->
-          <div class="hero-navigator">
-            <a href="#about" aria-label="Scroll to information section">
-              <img
-                src="./images/icons/darrow.png"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                height="12"
-              />
-            </a>
-          </div>
+          <a
+            href="#about"
+            class="hero-navigator"
+            aria-label="Scroll to information section"
+          >
+            <img
+              src="./images/icons/darrow.png"
+              alt="scroll-down-arrow"
+              aria-hidden="true"
+              loading="lazy"
+              height="12"
+              title="Scroll to know more"
+            />
+          </a>
         </div>
       </section>
 
@@ -116,7 +164,7 @@
       <section
         class="info-section white-bakground"
         id="about"
-        aria-labelledby="info-heading"
+        aria-label="Welcome to About section"
       >
         <div class="container info-log">
           <div class="info-text">
@@ -127,7 +175,8 @@
 
             <p class="roboto-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam
-              fuga optio odio fugit et ab unde temporibus maxime exercitationem.
+              fuga optio odio fugit et ab unde temporibus maxime
+              exercitationem.fuga optio odio fugit et ab unde temporibus maxime!
             </p>
 
             <ul class="info-feature-section" aria-label="Key company features">
@@ -171,73 +220,51 @@
               src="./images/img-3.jpg"
               alt="Team working together"
               loading="lazy"
+              height="500"
+              width="500"
             />
           </div>
         </div>
       </section>
 
       <!--Service Section-->
-      <section class="service-section" id="services">
+      <section
+        class="service-section dark-background"
+        id="services"
+        aria-label="Welcome to Service section"
+      >
         <div class="services container">
           <div class="service-context">
-            <h2 class="roboto-thin">
+            <h2>
               Some of our
               <span class="roboto-bold">best services</span>
-              <span class="block">to solve your problems</span>
+              to solve your problems
             </h2>
           </div>
           <div class="service-list">
-            <div class="service">
-              <a
-                href="#digital-marketing"
-                aria-label="Learn about Digital Marketing"
-              >
-                <img
-                  src="./images/icons/i-message.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  height="40"
-                />
-              </a>
-              <h4 class="roboto-medium">Digital Marketing</h4>
+            <div class="service-card digital-marketing">
+              <div class="service-icon"></div>
+              <h3 class="roboto-medium">Digital Marketing</h3>
               <p class="roboto-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
                 delectus sequi illum sunt ad ipsa quia vitae ipsam. Asperiores
                 laboriosam labore porro eum.
               </p>
             </div>
-            <div class="service">
-              <a
-                href="#web-dev"
-                aria-label="Learn about Web Development services"
-              >
-                <img
-                  src="./images/icons/i-feature.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  height="40"
-                />
-              </a>
-              <h4 class="roboto-medium">Web Development</h4>
+
+            <div class="service-card development">
+              <div class="service-icon"></div>
+              <h3 class="roboto-medium">Web Development</h3>
               <p class="roboto-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
                 delectus sequi illum sunt ad ipsa quia vitae ipsam. Asperiores
                 laboriosam labore porro eum.
               </p>
             </div>
-            <div class="service">
-              <a href="#uiux-design" aria-label="Learn about UI/UX Design">
-                <img
-                  src="./images/icons/i-sketch.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  height="40"
-                />
-              </a>
-              <h4 class="roboto-medium">UI/UX Design</h4>
+
+            <div class="service-card ui">
+              <div class="service-icon"></div>
+              <h3 class="roboto-medium">UI/UX Design</h3>
               <p class="roboto-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
                 delectus sequi illum sunt ad ipsa quia vitae ipsam. Asperiores
@@ -257,26 +284,27 @@
       </section>
 
       <!-- Product Section -->
-      <section class="product-section white-bakground" id="portfolio">
+      <section
+        class="product-section white-bakground"
+        id="portfolio"
+        aria-label="Welcome to Product section"
+      >
         <div class="container products">
           <!-- Product Description -->
           <div class="product-description">
             <h2 class="roboto-thin">
               <span class="roboto-bold">Good design</span>
-              is obvious
-              <span class="block">Great design is transparent</span>
+              is obvious Great design is transparent
             </h2>
 
-            <h5>
-              <span class="roboto-bold">About Joe ©</span>
-              <span class="roboto-medium">
-                graphic designer, digital literacy teacher
-              </span>
-            </h5>
+            <p>
+              <span class="roboto-bold color">About Joe ©</span>
+              <i>graphic designer, digital literacy teacher</i>
+            </p>
           </div>
 
           <!-- Product Menu -->
-          <nav class="product-menu" aria-label="Product categories">
+          <div class="product-menu" aria-label="Product categories">
             <ul class="product-menu-items">
               <li>
                 <a href="#portfolio" aria-label="Show all portfolio items"
@@ -291,7 +319,7 @@
               </li>
               <li><a href="#arts" aria-label="View art portfolio">ART</a></li>
             </ul>
-          </nav>
+          </div>
 
           <!-- Product Grid -->
           <div class="products-img-list">
@@ -418,114 +446,73 @@
       </section>
 
       <!--Achievement section-->
-      <section class="achievement-section" id="achievements">
+      <section
+        class="achievement-section"
+        id="achievements"
+        aria-label="Welcome to Achievement section"
+      >
         <div class="achievement-list container">
-          <div class="achievements">
-            <div>
-              <a href="#services" aria-label="Learn about our customers">
-                <img
-                  src="./images/icons/i-team.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  height="40"
-                />
-              </a>
-            </div>
-            <div class="achievement-context">
-              <h3>
-                <span class="roboto-medium">Unique customer:</span>
-              </h3>
-              <h2><span class="block roboto-bold">3519+</span></h2>
-            </div>
+          <!-- Item 1 -->
+          <div class="achievements icon-team">
+            <div class="achievement-icon"></div>
+            <p>Unique Customers:</p>
+            <h3>3519+</h3>
           </div>
-          <div class="achievements">
-            <div>
-              <a href="#services" aria-label="Learn about completed projects">
-                <img
-                  src="./images/icons/i-shield.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  height="40"
-                />
-              </a>
-            </div>
-            <div class="achievement-context">
-              <h3>
-                <span class="roboto-medium">Completed project:</span>
-              </h3>
-              <h2><span class="block roboto-bold">3519+</span></h2>
-            </div>
+
+          <div class="achievements icon-shield">
+            <div class="achievement-icon"></div>
+            <p>Completed Projects:</p>
+            <h3>3519+</h3>
           </div>
-          <div class="achievements">
-            <div>
-              <a href="#services" aria-label="Learn about happy users">
-                <img
-                  src="./images/icons/i-diamond.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  height="40"
-                />
-              </a>
-            </div>
-            <div class="achievement-context">
-              <h3>
-                <span class="roboto-medium">Happy User:</span>
-              </h3>
-              <h2><span class="block roboto-bold">3519+</span></h2>
-            </div>
+
+          <div class="achievements icon-diamond">
+            <div class="achievement-icon"></div>
+            <p>Happy Users:</p>
+            <h3>3519+</h3>
           </div>
-          <div class="achievements">
-            <div>
-              <a href="#services" aria-label="Learn about honors and awards">
-                <img
-                  src="./images/icons/i-trophy.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  height="40"
-                />
-              </a>
-            </div>
-            <div class="achievement-context">
-              <h3>
-                <span class="roboto-medium">Honors and awards:</span>
-              </h3>
-              <h2><span class="block roboto-bold">3519+</span></h2>
-            </div>
+
+          <div class="achievements icon-trophy">
+            <div class="achievement-icon"></div>
+            <p>Awards Won:</p>
+            <h3>3519+</h3>
           </div>
         </div>
       </section>
 
       <!--Pricing Section-->
-      <section class="pricing-section" id="pricing">
-        <div class="container">
-          <header class="pricing-header">
-            <h2 class="roboto-thin">
+      <section
+        class="pricing-section"
+        id="pricing"
+        aria-label="Welcome to Pricing section"
+      >
+        <div class="container pricing-wrapper">
+          <div class="pricing-header">
+            <h2>
               Flexible
               <span class="roboto-bold">Pricing</span>
               Plans
             </h2>
             <p class="subtitle">Dolor sit Mollitia harum ea ut eaque velit.</p>
-          </header>
+          </div>
 
           <div class="pricing-grid">
-            <article class="pricing-card">
-              <h3>Trial version</h3>
-              <p class="card-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
+            <div class="pricing-card">
+              <div class="card-title">
+                <h3>Trial version</h3>
+                <p class="card-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
 
-              <div class="price">free</div>
-
-              <ul class="features">
-                <li>500gb drive space</li>
-                <li>Unlimited messages</li>
-                <li class="muted">Free Email address</li>
-                <li class="muted">Friendly support</li>
-              </ul>
+              <div class="card-description">
+                <h3>free</h3>
+                <ul class="features">
+                  <li>500gb drive space</li>
+                  <li>Unlimited messages</li>
+                  <li class="muted">Free Email address</li>
+                  <li class="muted">Friendly support</li>
+                </ul>
+              </div>
 
               <a
                 href="/download"
@@ -533,25 +520,29 @@
                 aria-label="Download trial version"
                 >DOWNLOAD</a
               >
-            </article>
+            </div>
 
-            <article class="pricing-card featured">
-              <h3>Regular</h3>
-              <p class="card-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
-
-              <div class="price">
-                <span class="currency">$</span>19
-                <span class="duration">/Month</span>
+            <div class="pricing-card">
+              <div class="card-title">
+                <h3>Regular</h3>
+                <p class="card-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
               </div>
 
-              <ul class="features">
-                <li>500gb drive space</li>
-                <li>Unlimited messages</li>
-                <li>Free Email address</li>
-                <li class="muted">Friendly support</li>
-              </ul>
+              <div class="card-description">
+                <div class="price">
+                  <span class="currency">$</span>19
+                  <span class="duration">/Month</span>
+                </div>
+
+                <ul class="features">
+                  <li>500gb drive space</li>
+                  <li>Unlimited messages</li>
+                  <li>Free Email address</li>
+                  <li class="muted">Friendly support</li>
+                </ul>
+              </div>
 
               <a
                 href="/purchase-regular"
@@ -559,25 +550,29 @@
                 aria-label="Purchase regular plan"
                 >PURCHASE</a
               >
-            </article>
+            </div>
 
-            <article class="pricing-card">
-              <h3>Extended</h3>
-              <p class="card-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
-
-              <div class="price">
-                <span class="currency">$</span>29
-                <span class="duration">/Month</span>
+            <div class="pricing-card">
+              <div class="card-title">
+                <h3>Extended</h3>
+                <p class="card-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
               </div>
 
-              <ul class="features">
-                <li>500gb drive space</li>
-                <li>Unlimited messages</li>
-                <li>Free Email address</li>
-                <li>Friendly support</li>
-              </ul>
+              <div class="card-description">
+                <div class="price">
+                  <span class="currency">$</span>29
+                  <span class="duration">/Month</span>
+                </div>
+
+                <ul class="features">
+                  <li>500gb drive space</li>
+                  <li>Unlimited messages</li>
+                  <li>Free Email address</li>
+                  <li>Friendly support</li>
+                </ul>
+              </div>
 
               <a
                 href="/purchase-extended"
@@ -585,20 +580,22 @@
                 aria-label="Purchase extended plan"
                 >PURCHASE</a
               >
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
       <!--Testimonial Section-->
-      <section class="testimonial-section dark-background" id="testimonials">
-        <div class="testimonial-overlay"></div>
-
+      <section
+        class="testimonial-section dark-background"
+        id="testimonials"
+        aria-label="Welcome to Testimonials section"
+      >
         <div class="container testimonial-content">
           <div class="testimonial-header-nav">
             <!-- Header -->
             <div class="testimonial-header">
-              <h2 class="roboto-thin">
+              <h2>
                 <span class="roboto-bold">Testimonials</span>
                 About Us
               </h2>
@@ -608,21 +605,31 @@
             </div>
 
             <!-- Navigation -->
-            <div class="testimonial-nav">
-              <button class="nav-btn prev" aria-label="Previous testimonial">
+            <div class="testimonial-title">
+              <a
+                class="nav-btn prev"
+                href="/previous"
+                aria-label="Previous testimonial"
+                title="previous-button"
+              >
                 <img
                   src="./images/icons/larrow.png"
-                  alt=""
+                  alt="previous-button"
                   aria-hidden="true"
                 />
-              </button>
-              <button class="nav-btn next" aria-label="Next testimonial">
+              </a>
+              <a
+                class="nav-btn next"
+                href="/previous"
+                aria-label="Previous testimonial"
+                title="next-button"
+              >
                 <img
                   src="./images/icons/rarrow.png"
-                  alt=""
+                  alt="next-button"
                   aria-hidden="true"
                 />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -634,6 +641,9 @@
                 src="./images/t-1.jpeg"
                 alt="Robert Newmen, Microsoft Corporation"
                 class="testimonial-avatar"
+                height="95"
+                width="95"
+                title="Robert Newmen, Microsoft Corporation"
               />
               <h4>Robert Newmen</h4>
               <span class="company">Microsoft Corporation</span>
@@ -641,16 +651,19 @@
                 Dolor sit amet, consectetur adipisicing elit. Dolor sit Mollitia
                 harum ea ut eaque velit. Ex rem provident nobis at deserunt,
                 dolores blanditiis vero aut. Fuga ab quisquam aliquid eius
-                vitae!
+                vitae!vero aut. Fuga ab quisquam aliquid eius vitae!
               </p>
             </div>
 
             <!-- Card 2 -->
             <div class="testimonial-card">
               <img
+                title="Robert Newmen ,Space X"
                 src="./images/t-2.jpeg"
                 alt="Robert Newmen, Space X"
                 class="testimonial-avatar"
+                height="100"
+                width="100"
               />
               <h4>Robert Newmen</h4>
               <span class="company">Space X</span>
@@ -658,7 +671,7 @@
                 Dolor sit amet, consectetur adipisicing elit. Dolor sit Mollitia
                 harum ea ut eaque velit. Ex rem provident nobis at deserunt,
                 dolores blanditiis vero aut. Fuga ab quisquam aliquid eius
-                vitae!
+                vitae!vero aut. Fuga ab quisquam aliquid eius vitae!
               </p>
             </div>
           </div>
@@ -666,14 +679,18 @@
       </section>
 
       <!--Blog Section-->
-      <section class="blog-section white-bakground" id="blog">
+      <section
+        class="blog-section white-bakground"
+        id="blog"
+        aria-label="Welcome to Blog section"
+      >
         <div class="container blog-wrapper">
           <!-- Section Header -->
           <div class="blog-header">
             <h2 class="roboto-thin">
-              <span>Latest</span>
+              Latest
               <span class="roboto-bold"> blog</span>
-              <span> posts</span>
+              posts
             </h2>
             <p>Dolor sit Mollitia harum ea ut eaque velit.</p>
           </div>
@@ -686,6 +703,7 @@
                 src="./images/img-2.jpg"
                 alt="Blog post about modern web design"
                 loading="lazy"
+                title="blog-image1"
               />
               <div class="blog-content">
                 <h4>Fuga ab quisquam quisquam culpa aliquid eius vitae.</h4>
@@ -708,6 +726,7 @@
                 src="./images/img-2.jpg"
                 alt="Blog post about UI/UX trends"
                 loading="lazy"
+                title="blog-image2"
               />
               <div class="blog-content">
                 <h4>Fuga ab quisquam non reiciendis aliquid eius vitae.</h4>
@@ -730,6 +749,7 @@
                 src="./images/img-2.jpg"
                 alt="Blog post about digital marketing"
                 loading="lazy"
+                title="blog-image3"
               />
               <div class="blog-content">
                 <h4>
@@ -752,15 +772,18 @@
       </section>
 
       <!--Footer Section-->
-      <footer class="footer">
-        <div class="footer-section container">
+      <footer class="footer" aria-label="Welcome to Footer section">
+        <section class="footer-section container">
           <div class="footer-top">
             <div class="footer-logo">
-              <img
-                src="images/logo-footer.jpg"
-                alt="Corey Logo"
-                loading="lazy"
-              />
+              <a href="#home">
+                <img
+                  src="images/logo-footer.jpg"
+                  alt="Corey Logo"
+                  loading="lazy"
+                  title="go to homepage"
+                />
+              </a>
             </div>
 
             <div class="footer-links">
@@ -848,7 +871,7 @@
               MILLERDIGITALDESIGN
             </p>
           </div>
-        </div>
+        </section>
       </footer>
     </main>
   </body>
