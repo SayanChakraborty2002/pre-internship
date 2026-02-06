@@ -46,13 +46,17 @@ h1 {
 
 @media (max-width: 768px) {
   .container {
+    max-width: 720px;
     padding-inline: 20px;
+    padding-block: 60px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .container {
-    padding-inline: 16px;
+    max-width: 100%;
+    padding-block: 45px;
+    padding-inline: 14px;
   }
 }
 
@@ -311,7 +315,6 @@ h1 {
   justify-content: center;
   text-align: center;
   color: #fff;
-  padding: 32px;
 }
 .service-context {
   max-width: 600px;
@@ -340,10 +343,14 @@ h1 {
 .service-list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   gap: 32px;
+}
+@media (max-width: 768px) {
+  .service-list {
+    flex-direction: column;
+  }
 }
 
 .service-list p {
@@ -430,19 +437,27 @@ h1 {
   display: flex;
   flex: 1;
   gap: 10px;
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 
 .product-menu-items a {
   text-decoration: none;
-  padding: 30px 20px;
+  padding: 30px 25px;
   font-weight: 600;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: #000000;
   letter-spacing: 2px;
   display: block;
   min-width: 50px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .product-menu-items a {
+    padding: 25px 18px;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
 }
 .product-menu-items a:hover {
   background-color: rgba(240, 239, 244, 0.5);
@@ -512,7 +527,7 @@ h1 {
 /* OVERLAY */
 .product-overlay {
   position: absolute;
-  inset: 11px;
+  inset: 15px;
   background-color: rgba(17, 21, 52, 0.85);
   display: flex;
   align-items: center;
@@ -685,6 +700,12 @@ h1 {
   gap: 23px;
 }
 
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
 .pricing-card h3 {
   font-size: 2rem;
   font-weight: 400;
@@ -776,11 +797,11 @@ h1 {
   color: #939eb6;
 }
 
-.testimonial-title {
+.testimonial-btns {
   display: flex;
 }
 
-.nav-btn {
+.testimonial-btn {
   width: 70px;
   height: 70px;
   border: none;
@@ -790,16 +811,31 @@ h1 {
   justify-content: center;
 }
 
-.nav-btn.prev {
+.testimonial-btn.prev {
   background: #3a376c;
 }
 
-.nav-btn.next {
+.testimonial-btn.next {
   background: rgba(208, 169, 4, 1);
 }
 
-.nav-btn img {
+.testimonial-btn img {
   width: 10px;
+}
+
+@media (max-width: 677px) {
+  .testimonial-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .testimonial-btns {
+    justify-content: space-between;
+    flex: 1;
+  }
+  .testimonial-header-nav {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .testimonial-grid {
@@ -891,6 +927,12 @@ h1 {
   height: 15rem;
   object-fit: cover;
   display: block;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 /* CONTENT */
