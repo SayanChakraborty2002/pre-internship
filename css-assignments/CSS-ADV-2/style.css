@@ -60,6 +60,14 @@ h1 {
   }
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: #fbfaff;
+  border-bottom: 0.5px solid #3a376c;
+}
+
 /* NAVBAR */
 .navbar-wrapper {
   padding: 0;
@@ -213,9 +221,9 @@ h1 {
 }
 
 .btn:hover {
-  background-color: rgba(208, 169, 4, 1);
+  background-color: #d0a806;
   color: #fff;
-  border-color: rgba(208, 169, 4, 1);
+  border-color: #d0a806;
 }
 
 @media (max-width: 576px) {
@@ -664,7 +672,7 @@ h1 {
 }
 
 .achievements:hover {
-  color: #d0a904;
+  color: #d8c201;
   transition: all 0.3s ease;
 }
 
