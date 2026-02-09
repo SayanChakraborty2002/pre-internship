@@ -327,7 +327,7 @@ header {
 /* Service Section */
 .service-section {
   position: relative;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   background: url("./images/img-2.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -594,7 +594,7 @@ header {
 
 .achievement-section {
   position: relative;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   background: url("./images/img-4.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -784,7 +784,7 @@ header {
 /* TESTIMONIAL SECTION */
 .testimonial-section {
   position: relative;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   background: url("./images/img-3.jpg") center/cover no-repeat;
 }
 
