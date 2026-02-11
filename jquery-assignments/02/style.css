@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#flip,
+#panel {
+  background-color: #e5eecc;
+  text-align: center;
+  width: 100%;
+  border: solid 1px #c3c3c3;
+}
+#flip {
+  padding: 10px;
+  background-color: #e5eecc;
+}
+#panel {
+  background-color: #dfedff;
+  padding: 80px;
+  display: none;
+}

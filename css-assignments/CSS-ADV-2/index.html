@@ -16,6 +16,8 @@
     />
     <link rel="stylesheet" href="style.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <title>Business Landing Page</title>
   </head>
 
@@ -37,6 +39,17 @@
 
         <!-- Navigation -->
         <div class="navbar-menu">
+          <button class="menu-btn" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- <img
+              src="./images/menu.png"
+              height="40"
+              width="45"
+              alt="menu bar logo"
+            /> -->
+          </button>
           <ul class="nav-list" aria-label="menu-list" role="menubar">
             <li>
               <a href="#home" aria-label="Go to home section" role="menuitem"
@@ -84,34 +97,31 @@
                   title="go to blog"
               /></a>
             </li>
+            <li>
+              <!-- Mail Icon -->
+              <a
+                class="mail-logo"
+                href="mailto:support@corey.com"
+                aria-label="Contact us via email"
+              >
+                <img
+                  src="./images/mail.jpg"
+                  alt=""
+                  aria-hidden="true"
+                  title="mail-logo"
+                  height="50"
+                  loading="eager"
+                />
+              </a>
+            </li>
           </ul>
-
-          <!-- Mail Icon -->
-          <a
-            class="mail-logo"
-            href="mailto:support@corey.com"
-            aria-label="Contact us via email"
-          >
-            <img
-              src="./images/mail.jpg"
-              alt=""
-              aria-hidden="true"
-              title="mail-logo"
-              height="50"
-              loading="eager"
-            />
-          </a>
         </div>
       </nav>
     </header>
 
     <main>
       <!-- HERO SECTION -->
-      <section
-        class="hero-section dark-background"
-        id="home"
-        aria-label="Welcome to Hero section"
-      >
+      <section class="hero-section dark-background" id="home">
         <div class="hero-content container">
           <div class="hero-description">
             <h1 id="hero-heading" class="hero-heading">
@@ -130,7 +140,7 @@
             <div class="hero-buttons">
               <a
                 href="#contact"
-                class="btn white-outline"
+                class="btn white-outline active-btn"
                 aria-label="Contact our company"
                 >CONTACT US</a
               >
@@ -161,11 +171,7 @@
       </section>
 
       <!-- INFO SECTION -->
-      <section
-        class="info-section white-bakground"
-        id="about"
-        aria-label="Welcome to About section"
-      >
+      <section class="info-section white-bakground" id="about">
         <div class="container info-log">
           <div class="info-text">
             <h2 id="info-heading" class="roboto-thin">
@@ -204,7 +210,7 @@
 
               <li class="info-features">
                 <img
-                  src="./images/icons/i-trophy_b.svg"
+                  src="./images/icons/i-trophy-d.svg"
                   alt="trophy-icon"
                   aria-hidden="true"
                   loading="lazy"
@@ -228,11 +234,7 @@
       </section>
 
       <!--Service Section-->
-      <section
-        class="service-section dark-background"
-        id="services"
-        aria-label="Welcome to Service section"
-      >
+      <section class="service-section dark-background" id="services">
         <div class="services container">
           <div class="service-context">
             <h2>
@@ -275,7 +277,7 @@
           <div class="service-button">
             <a
               href="#contact"
-              class="btn white-outline"
+              class="btn white-outline active-btn"
               aria-label="Order a service"
               >ORDER A SERVICE</a
             >
@@ -284,11 +286,7 @@
       </section>
 
       <!-- Product Section -->
-      <section
-        class="product-section white-bakground"
-        id="portfolio"
-        aria-label="Welcome to Product section"
-      >
+      <section class="product-section white-bakground" id="portfolio">
         <div class="container products">
           <!-- Product Description -->
           <div class="product-description">
@@ -307,7 +305,10 @@
           <div class="product-menu" aria-label="Product categories">
             <ul class="product-menu-items">
               <li>
-                <a href="#portfolio" aria-label="Show all portfolio items"
+                <a
+                  href="#portfolio"
+                  class="active-tab"
+                  aria-label="Show all portfolio items"
                   >SHOW ALL</a
                 >
               </li>
@@ -546,7 +547,7 @@
 
               <a
                 href="/purchase-regular"
-                class="btn purple-outline"
+                class="btn purple-outline active-btn"
                 aria-label="Purchase regular plan"
                 >PURCHASE</a
               >
@@ -738,7 +739,7 @@
                 </p>
                 <a
                   href="/blog-detail"
-                  class="btn purple-outline blog-btn"
+                  class="btn purple-outline blog-btn active-btn"
                   aria-label="Read more about this blog post"
                   >READ MORE</a
                 >
@@ -775,7 +776,7 @@
       </section>
 
       <!--Footer Section-->
-      <footer class="footer" aria-label="Welcome to Footer section">
+      <footer class="footer">
         <section class="footer-section container">
           <div class="footer-top">
             <div class="footer-logo">
@@ -879,5 +880,20 @@
         </section>
       </footer>
     </main>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu-btn").click(function () {
+          $(this).toggleClass("active");
+          $(".nav-list").slideToggle("slow");
+        });
+      });
+
+      $(window).resize(function () {
+        if ($(window).width() > 915) {
+          $(".nav-list").removeAttr("style");
+        }
+      });
+    </script>
   </body>
 </html>
