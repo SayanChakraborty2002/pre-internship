@@ -167,6 +167,14 @@ h1 {
 }
 
 @media (max-width: 940px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fbfaff;
+    /* border-bottom: 0.5px solid #4c4370; */
+    box-shadow: 0.5px 2px 7px rgb(198, 198, 198);
+  }
   .menu-btn {
     display: flex;
   }
@@ -633,6 +641,9 @@ h1 {
   justify-content: center;
   margin-bottom: 25px;
   font-weight: 100;
+}
+.overlay-icon::after {
+  content: "+";
 }
 
 .overlay-content h4 {
