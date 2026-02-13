@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-white shadow-sm position-fixed top-0 start-0 w-100 position-md-static z-3 p-0 align-items-stretch"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <a href="#home" aria-label="Go to homepage" rel="home">
+            <img
+              src="../images/head_logo.jpg"
+              alt="Company logo"
+              loading="eager"
+              title="go to homepage"
+              height="70"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse align-items-center"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav nav-list ms-auto"
+              aria-label="menu-list"
+              role="menubar"
+            >
+              <li class="nav-item mt-2 mt-lg-0 mb-2 mb-lg-0">
+                <a
+                  class="nav-link px-4"
+                  href="#home"
+                  aria-label="Go to home section"
+                  role="menuitem"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0">
+                <a
+                  class="nav-link px-4"
+                  href="#about"
+                  aria-label="Go to about section"
+                  role="menuitem"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0">
+                <a
+                  class="nav-link px-4"
+                  href="#services"
+                  aria-label="Go to services section"
+                  role="menuitem"
+                  >SERVICES</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0">
+                <a
+                  class="nav-link px-4"
+                  href="#portfolio"
+                  aria-label="Go to portfolio section"
+                  role="menuitem"
+                  >PORTFOLIO</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0">
+                <a
+                  class="nav-link px-4"
+                  href="#pricing"
+                  aria-label="Go to pricing section"
+                  role="menuitem"
+                  >PRICE</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0">
+                <a
+                  class="nav-link px-4"
+                  href="#blog"
+                  aria-label="Go to blog section"
+                  role="menuitem"
+                  >BLOG
+                  <img
+                    class="ms-1"
+                    src="../images/icons/arrow-down.svg"
+                    alt="down-arrow"
+                    aria-hidden="true"
+                    height="6"
+                    title="go to blog"
+                /></a>
+              </li>
+              <li class="nav-item mb-2 mb-lg-0">
+                <!-- Mail Icon -->
+                <a
+                  class="mail-logo nav-link px-4"
+                  href="mailto:support@corey.com"
+                  aria-label="Contact us via email"
+                >
+                  <img
+                    src="../images/mail.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    title="mail-logo"
+                    height="45"
+                    loading="eager"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        class="hero-section pt-5 dark-background position-relative d-flex vh-100 flex-column align-items-center justify-content-between text-center"
+        id="home"
+      >
+        <div
+          class="hero-content container position-relative d-flex justify-content-center align-items-center z-2"
+        >
+          <div
+            class="hero-description position-relative d-flex align-items-center justify-content-center"
+          >
+            <h1 id="hero-heading" class="hero-heading">
+              We Will
+              <span class="roboto-bold">Make</span>
+              Your
+              <span class="roboto-bold">Business</span>
+              Great Again
+            </h1>
+
+            <p class="roboto-thin">
+              Qnsectetur adipisicing elit. Impedit repudiandae nisi maiores
+              dolore dolor.
+            </p>
+
+            <div
+              class="hero-buttons position-relative z-2 d-flex flex-wrap gap-3"
+            >
+              <a
+                href="#contact"
+                class="btn white-outline active-btn"
+                aria-label="Contact our company"
+                >CONTACT US</a
+              >
+              <a
+                href="#services"
+                class="btn white-outline"
+                aria-label="Discover our services"
+                >DISCOVER NOW</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Down Arrow -->
+        <a
+          href="#about "
+          class="hero-navigator position-relative z-2 rounded-circle p-3"
+          aria-label="Scroll to information section"
+        >
+          <img
+            src="../images/icons/darrow.png"
+            alt="scroll-down-arrow"
+            aria-hidden="true"
+            loading="lazy"
+            height="12"
+            title="Scroll to know more"
+          />
+        </a>
+      </section>
+
+      <!-- INFO SECTION -->
+      <section
+        class="info-section white-background py-5 mx-auto d-flex align-items-center justify-content-center"
+        id="about"
+      >
+        <div class="container info-log row gx-5 py-1 py-md-4 gap-3 gap-md-0">
+          <div
+            class="info-text col-12 col-lg-5 d-flex justify-content- align-items-start flex-wrap"
+          >
+            <h2 id="info-heading" class="roboto-thin">
+              Hello
+              <span class="roboto-bold">World</span>
+            </h2>
+
+            <p class="roboto-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam
+              fuga optio odio fugit et ab unde temporibus maxime
+              exercitationem.fuga optio odio fugit et ab unde temporibus maxime!
+            </p>
+
+            <ul
+              class="list-unstyled info-feature-section d-flex flex-column gap-4"
+              aria-label="Key company features"
+            >
+              <li class="info-features">
+                <img
+                  class="me-2"
+                  src="../images/icons/i-diamond_b.svg"
+                  alt="diamond-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  height="40"
+                />
+                <span>Exploring your area of activity</span>
+              </li>
+
+              <li class="info-features">
+                <img
+                  class="me-2"
+                  src="../images/icons/i-wallet-d.svg"
+                  alt="wallet-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  height="40"
+                />
+                <span>Delivering quality results</span>
+              </li>
+
+              <li class="info-features">
+                <img
+                  class="me-2"
+                  src="../images/icons/i-trophy-d.svg"
+                  alt="trophy-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  height="40"
+                />
+                <span>Building long-term partnerships</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-img col-12 col-lg-7">
+            <img
+              class="w-100 h-auto"
+              src="../images/img-3.jpg"
+              alt="Team working together"
+              loading="lazy"
+              height="420"
+              width="450"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--Service Section-->
+      <section
+        class="p-3 p-md-5 service-section dark-background position-relative d-flex align-items-center justify-content-center text-center"
+        id="services"
+      >
+        <div
+          class="services container p-3 p-md-5 position-relative z-2 x-3 d-flex justify-content-center align-items-center flex-column gap-5"
+        >
+          <div class="service-context">
+            <h2>
+              Some of our
+              <span class="roboto-bold">best services</span>
+              to solve your problems
+            </h2>
+          </div>
+          <div
+            class="service-list d-flex justify-content-center align-items-center gap-4"
+          >
+            <div
+              class="service-card d-flex flex-column align-items-center gap-3 justify-content-center gap-2 digital-marketing"
+            >
+              <div
+                class="service-icon d-flex align-items-center justify-content-center mt-2 rounded-circle position-relative"
+              ></div>
+              <h5 class="roboto-medium">Digital Marketing</h5>
+              <p class="roboto-thin">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                delectus sequi illum sunt ad ipsa quia vitae ipsam. Asperiores
+                laboriosam labore porro eum.
+              </p>
+            </div>
+
+            <div
+              class="service-card d-flex flex-column align-items-center gap-3 justify-content-center gap-2 development"
+            >
+              <div
+                class="service-icon d-flex align-items-center justify-content-center mt-2 rounded-circle position-relative"
+              ></div>
+              <h5 class="roboto-medium">Web Development</h5>
+              <p class="roboto-thin">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                delectus sequi illum sunt ad ipsa quia vitae ipsam. Asperiores
+                laboriosam labore porro eum.
+              </p>
+            </div>
+
+            <div
+              class="service-card d-flex flex-column align-items-center gap-3 justify-content-center gap-2 ui"
+            >
+              <div
+                class="service-icon d-flex align-items-center justify-content-center mt-2 rounded-circle position-relative"
+              ></div>
+              <h5 class="roboto-medium">UI/UX Design</h5>
+              <p class="roboto-thin">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                delectus sequi illum sunt ad ipsa quia vitae ipsam. Asperiores
+                laboriosam labore porro eum.
+              </p>
+            </div>
+          </div>
+          <div class="service-button">
+            <a
+              href="#contact"
+              class="btn white-outline active-btn"
+              aria-label="Order a service"
+              >ORDER A SERVICE</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section
+        class="product-section white-bakground p-3 p-md-4"
+        id="portfolio"
+      >
+        <div class="container products p-3 p-md-4">
+          <!-- Product Description -->
+          <div class="product-description">
+            <h2 class="roboto-thin">
+              <span class="roboto-bold">Good design</span>
+              is obvious Great design is transparent
+            </h2>
+
+            <p>
+              <span class="roboto-bold color">About Joe ©</span>
+              <i>graphic designer, digital literacy teacher</i>
+            </p>
+          </div>
+
+          <!-- Product Menu -->
+          <div class="product-menu" aria-label="Product categories">
+            <ul class="product-menu-items list-unstyled mb-5 d-flex gap-3">
+              <li class="nav-item">
+                <a
+                  href="#portfolio"
+                  class="active-tab nav-link p-3 p-md-4"
+                  aria-label="Show all portfolio items"
+                  >SHOW ALL</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-3 p-md-4"
+                  href="#designs"
+                  aria-label="View design portfolio"
+                  >DESIGN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-3 p-md-4"
+                  href="#codes"
+                  aria-label="View code portfolio"
+                  >CODE</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-3 p-md-4"
+                  href="#arts"
+                  aria-label="View art portfolio"
+                  >ART</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-img-list row">
+            <div class="product product-1 p-0">
+              <a href="/product" aria-label="View product 1 details">
+                <img
+                  src="../images/12-min.jpg"
+                  alt="Product showcase image 1"
+                  loading="lazy"
+                />
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <span class="overlay-icon"></span>
+                    <h4>Project Title</h4>
+                    <p>Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product p-0">
+              <a href="/product" aria-label="View product 2 details">
+                <img
+                  src="../images/2-min.jpg"
+                  alt="Product showcase image 2"
+                  loading="lazy"
+                />
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <span class="overlay-icon"></span>
+                    <h4>Project Title</h4>
+                    <p>Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product p-0">
+              <a href="/product" aria-label="View product 3 details">
+                <img
+                  src="../images/2-min.jpg"
+                  alt="Product showcase image 3"
+                  loading="lazy"
+                />
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <span class="overlay-icon"></span>
+                    <h4>Project Title</h4>
+                    <p>Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product p-0">
+              <a href="/product" aria-label="View product 4 details">
+                <img
+                  src="../images/2-min.jpg"
+                  alt="Product showcase image 4"
+                  loading="lazy"
+                />
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <span class="overlay-icon"></span>
+                    <h4>Project Title</h4>
+                    <p>Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product p-0">
+              <a href="/product" aria-label="View product 5 details">
+                <img
+                  src="../images/2-min.jpg"
+                  alt="Product showcase image 5"
+                  loading="lazy"
+                />
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <span class="overlay-icon"></span>
+                    <h4>Project Title</h4>
+                    <p>Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product p-0">
+              <a href="/product" aria-label="View product 6 details">
+                <img
+                  src="../images/2-min.jpg"
+                  alt="Product showcase image 6"
+                  loading="lazy"
+                />
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <span class="overlay-icon"></span>
+                    <h4>Project Title</h4>
+                    <p>Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="product p-0 product-7">
+              <a href="/product" aria-label="View product 7 details">
+                <img
+                  src="../images/12-min.jpg"
+                  alt="Product showcase image 7"
+                  loading="lazy"
+                />
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <span class="overlay-icon"></span>
+                    <h4>Project Title</h4>
+                    <p>Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Achievement section-->
+      <section
+        class="p-3 p-md-4 achievement-section position-relative d-flex justify-content-center align-items-center flex-wrap gap-4"
+        id="achievements"
+        aria-label="Welcome to Achievement section"
+      >
+        <div
+          class="achievement-list p-3 p-md-5 text-center position-relative z-2 p-3 p-md-4 container d-flex flex-wrap justify-content-evenly align-items-center gap-3"
+        >
+          <!-- Item 1 -->
+          <div
+            class="achievements d-flex justify-content-center align-items-center flex-column icon-team"
+          >
+            <div
+              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
+            ></div>
+            <p>Unique Customers:</p>
+            <h3>3519+</h3>
+          </div>
+
+          <div
+            class="achievements d-flex justify-content-center align-items-center gap-1 flex-column icon-shield"
+          >
+            <div
+              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
+            ></div>
+            <p>Completed Projects:</p>
+            <h3>3519+</h3>
+          </div>
+
+          <div
+            class="achievements d-flex justify-content-center align-items-center gap-1 flex-column icon-diamond"
+          >
+            <div
+              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
+            ></div>
+            <p>Happy Users:</p>
+            <h3>3519+</h3>
+          </div>
+
+          <div
+            class="achievements d-flex justify-content-center align-items-center gap-1 flex-column icon-trophy"
+          >
+            <div
+              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
+            ></div>
+            <p>Awards Won:</p>
+            <h3>3519+</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--Pricing Section-->
+      <section
+        class="pricing-section p-3 p-md-5"
+        id="pricing"
+        aria-label="Welcome to Pricing section"
+      >
+        <div
+          class="container p-3 p-md-5 pricing-wrapper d-flex justify-content-center align-items-center gap-4 flex-column text-center"
+        >
+          <div class="pricing-header">
+            <h2>
+              Flexible
+              <span class="roboto-bold">Pricing</span>
+              Plans
+            </h2>
+            <p class="subtitle">Dolor sit Mollitia harum ea ut eaque velit.</p>
+          </div>
+
+          <div class="pricing-grid row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="p-4 h-100 pricing-card w-100 text-center rounded shadow-sm d-flex flex-column justify-content-center align-items-center gap-2"
+              >
+                <div class="card-title">
+                  <h3>Trial version</h3>
+                  <p class="card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+
+                <div class="card-description">
+                  <h3>free</h3>
+                  <ul class="features list-unstyled d-flex flex-column gap-2">
+                    <li>500gb drive space</li>
+                    <li>Unlimited messages</li>
+                    <li class="muted">Free Email address</li>
+                    <li class="muted">Friendly support</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="/download"
+                  class="btn purple-outline"
+                  aria-label="Download trial version"
+                  >DOWNLOAD</a
+                >
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="p-4 pricing-card text-center w-100 rounded shadow-sm d-flex flex-column justify-content-center align-items-center gap-2"
+              >
+                <div class="card-title">
+                  <h3>Regular</h3>
+                  <p class="card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+
+                <div class="card-description">
+                  <div class="price">
+                    <span class="currency">$</span>19
+                    <span class="duration">/Month</span>
+                  </div>
+
+                  <ul class="features list-unstyled d-flex flex-column">
+                    <li>500gb drive space</li>
+                    <li>Unlimited messages</li>
+                    <li>Free Email address</li>
+                    <li class="muted">Friendly support</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="/purchase-regular"
+                  class="btn purple-outline active-btn"
+                  aria-label="Purchase regular plan"
+                  >PURCHASE</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="p-4 pricing-card w-100 text-center rounded shadow-sm d-flex flex-column justify-content-center align-items-center gap-2"
+              >
+                <div class="card-title">
+                  <h3>Extended</h3>
+                  <p class="card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+
+                <div class="card-description">
+                  <div class="price">
+                    <span class="currency">$</span>29
+                    <span class="duration">/Month</span>
+                  </div>
+
+                  <ul class="features list-unstyled d-flex flex-column">
+                    <li>500gb drive space</li>
+                    <li>Unlimited messages</li>
+                    <li>Free Email address</li>
+                    <li>Friendly support</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="/purchase-extended"
+                  class="btn purple-outline"
+                  aria-label="Purchase extended plan"
+                  >PURCHASE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Testimonial Section-->
+      <section
+        class="p-3 p-md-5 testimonial-section dark-background position-relative"
+        id="testimonials"
+        aria-label="Welcome to Testimonials section"
+      >
+        <div
+          class="container p-3 p-md-5 testimonial-content d-flex flex-column flex-wrap gap-3 position-relative z-2"
+        >
+          <div
+            class="testimonial-header-nav d-flex flex-wrap justify-content-between"
+          >
+            <!-- Header -->
+            <div class="testimonial-header">
+              <h2>
+                <span class="roboto-bold">Testimonials</span>
+                About Us
+              </h2>
+              <p class="subtitle">
+                Dolor sit Mollitia harum ea ut eaque velit.
+              </p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="testimonial-btns d-flex">
+              <a
+                class="testimonial-btn d-flex border-0 align-items-center justify-content-center prev"
+                href="/previous"
+                aria-label="Previous testimonial"
+                title="previous-button"
+              >
+                <img
+                  src="../images/icons/larrow.png"
+                  alt="previous-button"
+                  aria-hidden="true"
+                />
+              </a>
+              <a
+                class="testimonial-btn border-0 d-flex align-items-center justify-content-center next"
+                href="/previous"
+                aria-label="Previous testimonial"
+                title="next-button"
+              >
+                <img
+                  src="../images/icons/rarrow.png"
+                  alt="next-button"
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Testimonials -->
+          <div
+            class="testimonial-grid d-flex flex-wrap justify-content-between align-items-center gap-2"
+          >
+            <!-- Card 1 -->
+            <div
+              class="testimonial-card text-center d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="../images/t-1.jpeg"
+                alt="Robert Newmen, Microsoft Corporation"
+                class="testimonial-avatar"
+                height="95"
+                width="95"
+                title="Robert Newmen, Microsoft Corporation"
+              />
+              <h4>Robert Newmen</h4>
+              <span class="company">Microsoft Corporation</span>
+              <p class="testimonial-text">
+                Dolor sit amet, consectetur adipisicing elit. Dolor sit Mollitia
+                harum ea ut eaque velit. Ex rem provident nobis at deserunt,
+                dolores blanditiis vero aut. Fuga ab quisquam aliquid eius
+                vitae!vero aut. Fuga ab quisquam aliquid eius vitae!
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="testimonial-card d-flex flex-column align-items-center justify-content-center text-center"
+            >
+              <img
+                title="Robert Newmen ,Space X"
+                src="../images/t-2.jpeg"
+                alt="Robert Newmen, Space X"
+                class="testimonial-avatar"
+                height="100"
+                width="100"
+              />
+              <h4>Robert Newmen</h4>
+              <span class="company">Space X</span>
+              <p class="testimonial-text">
+                Dolor sit amet, consectetur adipisicing elit. Dolor sit Mollitia
+                harum ea ut eaque velit. Ex rem provident nobis at deserunt,
+                dolores blanditiis vero aut. Fuga ab quisquam aliquid eius
+                vitae!vero aut. Fuga ab quisquam aliquid eius vitae!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Blog Section-->
+      <section
+        class="p-3 p-md-5 blog-section white-bakground"
+        id="blog"
+        aria-label="Welcome to Blog section"
+      >
+        <div class="p-3 p-md-5 container blog-wrapper d-flex flex-column gap-3">
+          <!-- Section Header -->
+          <div class="blog-header">
+            <h2 class="roboto-thin">
+              Latest
+              <span class="roboto-bold"> blog</span>
+              posts
+            </h2>
+            <p>Dolor sit Mollitia harum ea ut eaque velit.</p>
+          </div>
+
+          <!-- Blog Cards -->
+          <div class="blog-grid row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <article
+                class="w-100 blog-card pb-3 d-flex shadow-sm flex-column gap-3 rounded"
+              >
+                <img
+                  src="../images/img-2.jpg"
+                  alt="Blog post about modern web design"
+                  loading="lazy"
+                  title="blog-image1"
+                  height="240"
+                />
+                <div class="blog-content d-flex flex-column gap-2 p-3">
+                  <h4>Fuga ab quisquam quisquam culpa aliquid eius vitae.</h4>
+                  <p>
+                    Delectus culpa in consequuntur nemo non reprehenderit
+                    repellat deleniti sunt...
+                  </p>
+                  <a
+                    href="/blog-detail"
+                    class="btn purple-outline blog-btn"
+                    aria-label="Read more about this blog post"
+                    >READ MORE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 2 (Highlighted) -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <article
+                class="blog-card pb-3 d-flex gap-3 shadow-sm flex-column rounded"
+              >
+                <img
+                  class="w-100"
+                  src="../images/img-2.jpg"
+                  alt="Blog post about UI/UX trends"
+                  loading="lazy"
+                  title="blog-image2"
+                  height="240"
+                />
+                <div class="blog-content d-flex flex-column gap-2 p-3">
+                  <h4>Fuga ab quisquam non reiciendis aliquid eius vitae.</h4>
+                  <p>
+                    Delectus culpa in consequuntur nemo non reprehenderit
+                    repellat deleniti sunt...
+                  </p>
+                  <a
+                    href="/blog-detail"
+                    class="btn purple-outline blog-btn active-btn"
+                    aria-label="Read more about this blog post"
+                    >READ MORE</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <article
+                class="blog-card d-flex gap-3 pb-3 flex-column shadow-sm rounded"
+              >
+                <img
+                  src="../images/img-2.jpg"
+                  alt="Blog post about digital marketing"
+                  loading="lazy"
+                  title="blog-image3"
+                  height="240"
+                />
+                <div class="blog-content d-flex flex-column gap-2 p-3">
+                  <h4>
+                    Fuga ab quisquam aliquid eius quisquam aliquid eius vitae.
+                  </h4>
+                  <p>
+                    Delectus culpa in consequuntur nemo non reprehenderit
+                    repellat deleniti sunt...
+                  </p>
+                  <a
+                    href="/blog-detail"
+                    class="btn purple-outline blog-btn"
+                    aria-label="Read more about this blog post"
+                    >READ MORE</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer Section-->
+      <footer class="footer">
+        <section class="footer-section container">
+          <div class="footer-top d-flex flex-column">
+            <a href="#home">
+              <img
+                class="footer-logo"
+                src="../images/logo-footer.jpg"
+                alt="Corey Logo"
+                loading="lazy"
+                title="go to homepage"
+                height="70"
+              />
+            </a>
+
+            <div
+              class="footer-links d-flex justify-content-between flex-wrap gap-4"
+            >
+              <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="list-unstyled text-uppercase">
+                  <li><a href="#about" aria-label="About us">about</a></li>
+                  <li>
+                    <a href="#contact" aria-label="Customer support">SUPPORT</a>
+                  </li>
+                  <li>
+                    <a href="#press" aria-label="Press releases">PRESS</a>
+                  </li>
+                  <li>
+                    <a href="#legal" aria-label="Legal information"
+                      >LEGAL & PRIVACY</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled text-uppercase">
+                  <li><a href="#blog" aria-label="Latest news">NEWS</a></li>
+                  <li>
+                    <a href="#contact" aria-label="Contact information"
+                      >CONTACT US</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#faq" aria-label="Frequently asked questions"
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-col">
+                <h4>Social</h4>
+                <ul class="list-unstyled text-uppercase">
+                  <li>
+                    <a href="#facebook" aria-label="Facebook profile"
+                      >FACEBOOK</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#google" aria-label="Google+ profile">GOOGLE +</a>
+                  </li>
+                  <li>
+                    <a href="#twitter" aria-label="Twitter profile">TWITTER</a>
+                  </li>
+                  <li>
+                    <a href="#instagram" aria-label="Instagram profile"
+                      >INSTAGRAM</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-col newsletter">
+                <h4>Subscribe newsletter</h4>
+                <form
+                  action="/send-mail"
+                  class="newsletter-box d-flex overflow-hidden"
+                >
+                  <input
+                    class="border-0"
+                    name="email"
+                    type="email"
+                    placeholder="email"
+                    autocomplete="email"
+                  />
+                  <button
+                    class="px-4 border-0 d-flex align-items-center justify-content-center"
+                    type="submit"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    <img
+                      src="../images/icons/i-message.svg"
+                      alt=""
+                      aria-hidden="true"
+                      height="20"
+                    />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom text-uppercase p-3 text-center">
+            <p class="m-0">
+              COPYRIGHT © ALL RIGHTS RESERVED 2018 | DESIGN AND DEVELOPMENT BY
+              MILLERDIGITALDESIGN
+            </p>
+          </div>
+        </section>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
