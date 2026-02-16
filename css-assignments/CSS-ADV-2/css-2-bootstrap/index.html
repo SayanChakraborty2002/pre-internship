@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="position-sticky top-0 z-3">
       <nav
-        class="navbar navbar-expand-lg bg-white shadow-sm position-fixed top-0 start-0 w-100 position-md-static z-3 p-0 align-items-stretch"
+        class="navbar navbar-expand-lg white-background shadow-sm top-0 start-0 w-100 p-0 align-items-stretch"
       >
         <div class="container">
           <!-- Logo -->
@@ -41,7 +41,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse align-items-center"
+            class="collapse navbar-collapse align-items-center h-100 align-items-stretch"
             id="navbarNav"
           >
             <ul
@@ -49,54 +49,54 @@
               aria-label="menu-list"
               role="menubar"
             >
-              <li class="nav-item mt-2 mt-lg-0 mb-2 mb-lg-0">
+              <li class="nav-item">
                 <a
-                  class="nav-link px-4"
+                  class="nav-link"
                   href="#home"
                   aria-label="Go to home section"
                   role="menuitem"
                   >HOME</a
                 >
               </li>
-              <li class="nav-item mb-2 mb-lg-0">
+              <li class="nav-item">
                 <a
-                  class="nav-link px-4"
+                  class="nav-link"
                   href="#about"
                   aria-label="Go to about section"
                   role="menuitem"
                   >ABOUT</a
                 >
               </li>
-              <li class="nav-item mb-2 mb-lg-0">
+              <li class="nav-item">
                 <a
-                  class="nav-link px-4"
+                  class="nav-link"
                   href="#services"
                   aria-label="Go to services section"
                   role="menuitem"
                   >SERVICES</a
                 >
               </li>
-              <li class="nav-item mb-2 mb-lg-0">
+              <li class="nav-item">
                 <a
-                  class="nav-link px-4"
+                  class="nav-link"
                   href="#portfolio"
                   aria-label="Go to portfolio section"
                   role="menuitem"
                   >PORTFOLIO</a
                 >
               </li>
-              <li class="nav-item mb-2 mb-lg-0">
+              <li class="nav-item">
                 <a
-                  class="nav-link px-4"
+                  class="nav-link"
                   href="#pricing"
                   aria-label="Go to pricing section"
                   role="menuitem"
                   >PRICE</a
                 >
               </li>
-              <li class="nav-item mb-2 mb-lg-0">
+              <li class="nav-item">
                 <a
-                  class="nav-link px-4"
+                  class="nav-link"
                   href="#blog"
                   aria-label="Go to blog section"
                   role="menuitem"
@@ -110,10 +110,10 @@
                     title="go to blog"
                 /></a>
               </li>
-              <li class="nav-item mb-2 mb-lg-0">
+              <li class="nav-item">
                 <!-- Mail Icon -->
                 <a
-                  class="mail-logo nav-link px-4"
+                  class="mail-logo nav-link"
                   href="mailto:support@corey.com"
                   aria-label="Contact us via email"
                 >
@@ -274,7 +274,7 @@
         id="services"
       >
         <div
-          class="services container p-3 p-md-5 position-relative z-2 x-3 d-flex justify-content-center align-items-center flex-column gap-5"
+          class="services container p-3 p-md-5 position-relative z-2 x-3 gap-5"
         >
           <div class="service-context">
             <h2>
@@ -284,14 +284,10 @@
             </h2>
           </div>
           <div
-            class="service-list d-flex justify-content-center align-items-center gap-4"
+            class="service-list d-flex flex-wrap justify-content-center align-items-center gap-4"
           >
-            <div
-              class="service-card d-flex flex-column align-items-center gap-3 justify-content-center gap-2 digital-marketing"
-            >
-              <div
-                class="service-icon d-flex align-items-center justify-content-center mt-2 rounded-circle position-relative"
-              ></div>
+            <div class="service-card digital-marketing">
+              <div class="service-icon"></div>
               <h5 class="roboto-medium">Digital Marketing</h5>
               <p class="roboto-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
@@ -300,12 +296,8 @@
               </p>
             </div>
 
-            <div
-              class="service-card d-flex flex-column align-items-center gap-3 justify-content-center gap-2 development"
-            >
-              <div
-                class="service-icon d-flex align-items-center justify-content-center mt-2 rounded-circle position-relative"
-              ></div>
+            <div class="service-card development">
+              <div class="service-icon"></div>
               <h5 class="roboto-medium">Web Development</h5>
               <p class="roboto-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
@@ -314,12 +306,8 @@
               </p>
             </div>
 
-            <div
-              class="service-card d-flex flex-column align-items-center gap-3 justify-content-center gap-2 ui"
-            >
-              <div
-                class="service-icon d-flex align-items-center justify-content-center mt-2 rounded-circle position-relative"
-              ></div>
+            <div class="service-card ui">
+              <div class="service-icon"></div>
               <h5 class="roboto-medium">UI/UX Design</h5>
               <p class="roboto-thin">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
@@ -530,42 +518,26 @@
           class="achievement-list p-3 p-md-5 text-center position-relative z-2 p-3 p-md-4 container d-flex flex-wrap justify-content-evenly align-items-center gap-3"
         >
           <!-- Item 1 -->
-          <div
-            class="achievements d-flex justify-content-center align-items-center flex-column icon-team"
-          >
-            <div
-              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
-            ></div>
+          <div class="achievements icon-team">
+            <div class="achievement-icon"></div>
             <p>Unique Customers:</p>
             <h3>3519+</h3>
           </div>
 
-          <div
-            class="achievements d-flex justify-content-center align-items-center gap-1 flex-column icon-shield"
-          >
-            <div
-              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
-            ></div>
+          <div class="achievements icon-shield">
+            <div class="achievement-icon"></div>
             <p>Completed Projects:</p>
             <h3>3519+</h3>
           </div>
 
-          <div
-            class="achievements d-flex justify-content-center align-items-center gap-1 flex-column icon-diamond"
-          >
-            <div
-              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
-            ></div>
+          <div class="achievements icon-diamond">
+            <div class="achievement-icon"></div>
             <p>Happy Users:</p>
             <h3>3519+</h3>
           </div>
 
-          <div
-            class="achievements d-flex justify-content-center align-items-center gap-1 flex-column icon-trophy"
-          >
-            <div
-              class="achievement-icon position-relative rounded-circle d-flex align-items-center justify-content-center"
-            ></div>
+          <div class="achievements icon-trophy">
+            <div class="achievement-icon"></div>
             <p>Awards Won:</p>
             <h3>3519+</h3>
           </div>
@@ -591,10 +563,8 @@
           </div>
 
           <div class="pricing-grid row g-3">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div
-                class="p-4 h-100 pricing-card w-100 text-center rounded shadow-sm d-flex flex-column justify-content-center align-items-center gap-2"
-              >
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+              <div class="h-100 pricing-card">
                 <div class="card-title">
                   <h3>Trial version</h3>
                   <p class="card-desc">
@@ -622,9 +592,7 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-              <div
-                class="p-4 pricing-card text-center w-100 rounded shadow-sm d-flex flex-column justify-content-center align-items-center gap-2"
-              >
+              <div class="pricing-card">
                 <div class="card-title">
                   <h3>Regular</h3>
                   <p class="card-desc">
@@ -655,9 +623,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div
-                class="p-4 pricing-card w-100 text-center rounded shadow-sm d-flex flex-column justify-content-center align-items-center gap-2"
-              >
+              <div class="pricing-card">
                 <div class="card-title">
                   <h3>Extended</h3>
                   <p class="card-desc">
@@ -815,9 +781,7 @@
           <div class="blog-grid row g-4">
             <!-- Card 1 -->
             <div class="col-lg-4 col-md-6 col-12">
-              <article
-                class="w-100 blog-card pb-3 d-flex shadow-sm flex-column gap-3 rounded"
-              >
+              <article class="w-100 blog-card">
                 <img
                   src="../images/img-2.jpg"
                   alt="Blog post about modern web design"
@@ -825,7 +789,7 @@
                   title="blog-image1"
                   height="240"
                 />
-                <div class="blog-content d-flex flex-column gap-2 p-3">
+                <div class="blog-content">
                   <h4>Fuga ab quisquam quisquam culpa aliquid eius vitae.</h4>
                   <p>
                     Delectus culpa in consequuntur nemo non reprehenderit
@@ -843,9 +807,7 @@
 
             <!-- Card 2 (Highlighted) -->
             <div class="col-lg-4 col-md-6 col-12">
-              <article
-                class="blog-card pb-3 d-flex gap-3 shadow-sm flex-column rounded"
-              >
+              <article class="blog-card">
                 <img
                   class="w-100"
                   src="../images/img-2.jpg"
@@ -854,7 +816,7 @@
                   title="blog-image2"
                   height="240"
                 />
-                <div class="blog-content d-flex flex-column gap-2 p-3">
+                <div class="blog-content">
                   <h4>Fuga ab quisquam non reiciendis aliquid eius vitae.</h4>
                   <p>
                     Delectus culpa in consequuntur nemo non reprehenderit
@@ -872,9 +834,7 @@
 
             <!-- Card 3 -->
             <div class="col-lg-4 col-md-6 col-12">
-              <article
-                class="blog-card d-flex gap-3 pb-3 flex-column shadow-sm rounded"
-              >
+              <article class="blog-card">
                 <img
                   src="../images/img-2.jpg"
                   alt="Blog post about digital marketing"
@@ -882,7 +842,7 @@
                   title="blog-image3"
                   height="240"
                 />
-                <div class="blog-content d-flex flex-column gap-2 p-3">
+                <div class="blog-content">
                   <h4>
                     Fuga ab quisquam aliquid eius quisquam aliquid eius vitae.
                   </h4>
