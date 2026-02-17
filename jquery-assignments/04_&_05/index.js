@@ -9,9 +9,9 @@ $(document).ready(function () {
     $(".main-content").fadeOut("slow");
   });
   $("footer").click(function () {
-    $(".pop-up").addClass("active");
+    $(".pop-up").css("display", "flex");
   });
   $(".pop-up-btn").click(function () {
-    $(".pop-up").removeClass("active");
+    $(".pop-up").css("display", "none");
   });
 });

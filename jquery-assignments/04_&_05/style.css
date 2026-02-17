@@ -99,7 +99,3 @@ body {
   background: 0;
   cursor: pointer;
 }
-
-.active {
-  display: flex;
-}
