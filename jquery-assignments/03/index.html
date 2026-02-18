@@ -13,12 +13,16 @@
   <body>
     <div class="container">
       <form action="#">
-        <label for="first-name">First name:</label><br />
-        <input type="text" value="Mickey" name="first-name" />
+        <div>
+          <label for="first-name">First Name</label> <br />
+          <input type="text" id="first-name" name="firstName" />
+        </div>
+
+        <div>
+          <label for="last-name">Last Name</label><br />
+          <input type="text" id="last-name" name="lastName" />
+        </div>
         <br />
-        <label for="last-name">Last name:</label><br />
-        <input type="text" value="Mouse" name="last-name" />
-        <br /><br />
         <button type="submit">Submit</button>
       </form>
     </div>
