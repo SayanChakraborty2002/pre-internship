@@ -171,6 +171,11 @@ ul {
   width: fit-content;
 }
 
+.about-btn:hover {
+  background: linear-gradient(to right, #ff334e, #fe8802);
+  transition: all 1s;
+}
+
 /*Gallary Section*/
 
 #gallary {
@@ -206,6 +211,10 @@ ul {
   width: fit-content;
   font-size: 1.2rem;
   color: black;
+}
+.light-btn:hover {
+  background: linear-gradient(to right, #ff334e, #fe8802);
+  color: #ffff;
 }
 
 /* Events */
