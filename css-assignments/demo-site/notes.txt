@@ -1,0 +1,8 @@
+1. Make Container max-width: 1180px;
+
+2. Use Google Font Roboto
+https://fonts.google.com/specimen/Roboto
+
+3. add hover effects
+
+4. make it fully responsive
