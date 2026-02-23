@@ -295,6 +295,9 @@ ul {
 }
 
 @media (max-width: 992px) {
+  .contacts {
+    padding: 30px;
+  }
   .map {
     height: 350px !important;
   }
