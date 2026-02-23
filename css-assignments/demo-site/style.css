@@ -320,9 +320,6 @@ ul {
 }
 .blog-card-img {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -335,7 +332,7 @@ ul {
 }
 .blog-card p {
   color: #686868;
-  font-size: 1.45rem;
+  font-size: 1.36rem;
   font-weight: 300;
   line-height: 1.9rem;
 }
@@ -494,7 +491,6 @@ ul {
   .gallary-content {
     gap: 20px;
     width: 100%;
-    color: #fff;
     padding: 20px;
   }
   .gallary-content h2 {
