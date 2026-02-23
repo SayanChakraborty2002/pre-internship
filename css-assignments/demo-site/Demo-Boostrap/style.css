@@ -208,7 +208,6 @@ p {
 
 .blog-card {
   display: flex;
-  flex: 1;
   flex-direction: column;
   background-color: #f3f3f3;
   position: relative;
